@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1>Central de senhas</h1>
+
+<h2>digite a senha de segurança</h2>
+
+<input type="text" name="txtv" id="txtv"> 
+<input type="button" value="verificar" onclick="verificar">
+<div id="res" ></div>
+
+<script>
+function verificar  () {
+
+var txtv = window.document.querySelector ('input#txtv')
+var res = window.document.querySelector ('div#res')
+
+
+
+
+
+var usuario = "admin"; 
+var senha = "123";
+
+if (usuario === "admin" && senha === "123") {
+  console.log("Acesso permitido.");
+} else {
+  console.log("Acesso negado.");
+}
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
