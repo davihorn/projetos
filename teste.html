@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Senhas</title>
+</head>
+<body>
+
+  <h1>Central de Senhas</h1>
+  <h2>Digite a senha de segurança</h2>
+
+  <input type="password" id="campoSenha" placeholder="Digite a senha">
+  <input type="button" value="Verificar" onclick="verificar()">
+
+  <script>
+    function verificar() {
+      var senhaDigitada = document.querySelector('#campoSenha').value;
+      var senhaCorreta = "123";
+
+      if (senhaDigitada === senhaCorreta) {
+        alert("Acesso permitido.");
+      } else {
+        alert("Acesso negado.");
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+

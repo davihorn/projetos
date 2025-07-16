@@ -6,33 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    
+
 
 <h1>Central de senhas</h1>
 
 <h2>digite a senha de segurança</h2>
 
-<input type="text" name="txtv" id="txtv"> 
-<input type="button" value="verificar" onclick="verificar">
-<div id="res" ></div>
+<input type="text" id="campoadmin" placeholder="admin">
+<input type="text" id="camposenha" placeholder="senha"> 
+<input type="button" value="verificar" onclick="verificar ()">
+
 
 <script>
 function verificar  () {
 
-var txtv = window.document.querySelector ('input#txtv')
-var res = window.document.querySelector ('div#res')
+var senhaDigitada = window.document.querySelector ('#camposenha').value;
+var  adminDigitado = window.document.querySelector('#campoadmin').value;
+var adminCorreto = "admin";
+var senhaCorreta = "123";
 
 
-
-
-
-var usuario = "admin"; 
-var senha = "123";
-
-if (usuario === "admin" && senha === "123") {
-  console.log("Acesso permitido.");
+if (adminDigitado === adminCorreto && senhaDigitada === senhaCorreta) {
+  window.alert("Acesso permitido.");
 } else {
-  console.log("Acesso negado.");
+  window.alert("Acesso negado.");
 }
 
 }
