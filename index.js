@@ -19,9 +19,9 @@ var usuario = "admin";
 var senha = "123";
 
 if (usuario === "admin" && senha === "123") {
-  console.log("Acesso permitido.");
+  window.alert("Acesso permitido.");
 } else {
-  console.log("Acesso negado.");
+window.alert("Acesso negado.");
 }
 
 
